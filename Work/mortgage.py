@@ -26,7 +26,6 @@ months_paid = 0
 
 while principal > 0:
    
-
     principal = principal * (1+rate/12) - payment
     total_paid = total_paid + payment
     months_paid = months_paid + 1
@@ -39,9 +38,9 @@ while principal > 0:
         payment = principal
         principal = principal - payment  
 
-    print(months_paid, 'Total paid', round(total_paid, 2),'Principal', round(principal,2))
+    print(f'Months paid - {months_paid}, Total paid - {round(total_paid, 2)}, Principal - {round(principal,2)}')
     
 
-
+ 
     
     
