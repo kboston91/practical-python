@@ -1,8 +1,8 @@
 # pcost.py
 #
+import gzip
 
-
-p = open('Data/portfolio.csv', 'rt')
+p = gzip.open('Data/portfolio.csv.gz', 'rt')
 headers = next(p).split(',')
 print(headers)
 total_cost = 0
@@ -16,3 +16,4 @@ print('The cost to buy this portfolio is ', total_cost)
 
 p.close()
 # Exercise 1.27
+# Now Exercose 1.28
